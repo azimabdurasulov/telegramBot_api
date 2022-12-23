@@ -7,5 +7,6 @@ updates=response.json()['result']
  
 for update in updates:
     msg = update['message']
+    print(msg['from'])
     print(msg['text'])
     
