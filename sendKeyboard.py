@@ -5,10 +5,16 @@ TOKEN = os.environ['TOKEN']
 
 def sendMessage(chat_id:str,text:str):
     URL = f'https://api.telegram.org/bot{TOKEN}/sendMessage'
-    button = {
-        'text':'button 1'
+    button1 = {
+        'text':'11'
     }
-    keyboard =  [[button,button]]
+    button2 = {
+        'text':'21'
+    }
+    button3 = {
+        'text':'HOME'
+    }
+    keyboard =  [[button1, button2], [button3]]
     reply_markup = {
         'keyboard':keyboard
     }
@@ -20,6 +26,7 @@ def sendMessage(chat_id:str,text:str):
     }
     r = requests.get(url=URL,json=payload)
     
-chat_id ='5575549228'
+chat_id ='5075065217'
 
 sendMessage(chat_id=chat_id,text='Salom')
+
