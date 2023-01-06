@@ -16,5 +16,6 @@ def sendPhoto(chat_id:str,photo:str):
 chat_id ='5575549228'
 
 photo_url='https://random.dog/2bff25d0-c721-4078-8cc9-f3ce6b464428.jpg'
+photo_id = 'AgACAgIAAxkBAAMcY7era1HI4YE7NaQeMpvKkDL9AgIAAnu_MRvjDsFJSqWju_4Jl98BAAMCAANzAAMtBA'
 
-sendPhoto(chat_id=chat_id,photo=photo_url)
+sendPhoto(chat_id=chat_id,photo=photo_id)
